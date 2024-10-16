@@ -1,9 +1,9 @@
 const fs = require('fs');
 //console.log(fs);
-fs.appendFile('demo1.txt',"My Name Is Roksana Akter ",function(err){
+fs.readFile('demo1.txt','utf-8',function(err,data){
     if(err) {
         console.log(err);
     }else{
-        console.log("File created");
+        console.log(data);
     }
 })

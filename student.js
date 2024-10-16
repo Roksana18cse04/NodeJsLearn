@@ -10,6 +10,13 @@ const getC_GPA = () =>{
     return "3.46 out of 4.00";
 }
 
-exports.getName = getName;
+/*exports.getName = getName;
 exports.getAge = getAge;
-exports.getC_GPA = getC_GPA;
+exports.getC_GPA = getC_GPA;*/
+
+module.exports = {
+    getName,
+    getAge,
+    getC_GPA
+
+}

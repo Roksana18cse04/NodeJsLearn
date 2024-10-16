@@ -1,6 +1,6 @@
 const fs = require('fs');
 //console.log(fs);
-fs.writeFile('demo1.txt',"This is sample  text ",function(err){
+fs.appendFile('demo1.txt',"My Name Is Roksana Akter ",function(err){
     if(err) {
         console.log(err);
     }else{

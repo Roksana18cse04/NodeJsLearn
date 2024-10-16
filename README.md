@@ -1,5 +1,18 @@
 # Learn Node JS
 
+# Why Node .js
+
+  - Easy to learn
+  - it uses asynchronous programming different than PHP ASP
+  - it can helps us to create open read write delete close file the server
+  - use for collecting data 
+  - use for creating API
+  - node js can add delete modify data in your database
+
+
+
+
+
 ## 3 Type Module 
    - Local Module (Create Own )
    - Global Module (Built-in in node Js)
@@ -28,3 +41,4 @@
 
 
 
+ 

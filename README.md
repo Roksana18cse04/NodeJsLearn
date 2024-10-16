@@ -17,6 +17,11 @@
    - Local Module (Create Own )
    - Global Module (Built-in in node Js)
    - Third Party Module (Install from npm or yarn)
+      - external file module/ package.json
+      - make sure initialize
+      - install package
+      - 
+
 
 
 
@@ -40,5 +45,25 @@
      - existsSync()
 
 
+# Node.js Network 
+- **http module**:
+- **http.createServer()**: Creates a new HTTP server.
+
+
+   request some common method are
+
+       get()
+       post()
+       delete()
+       put()
+       head()
+
+## HTTP status Code 
+    InformationResponse(100-199)
+    SuccessResponse(200-299)
+    RedirectionResponse(300-399)
+    ClientError(400-499)
+    ServerError(500-599)
 
  
+

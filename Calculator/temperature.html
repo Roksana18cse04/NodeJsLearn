@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .container div {
+            margin-bottom: 15px;
+        }
+        .result {
+            font-weight: bold;
+            color: blue;
+        }
+        nav ul {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Display items in a single line */
+            justify-content: center; /* Center the items horizontally */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Add some spacing between items */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: #333; /* Set link color */
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: green; /* Change link color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/circle">Circle Calculator</a></li>
+                <li><a href="/triangle">Triangle Calculator</a></li>
+                <li><a href="/temperature">Temperature Calculator</a></li>
+                <li><a href="/quadrilateral">Quadrilateral Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <form action="/temperature" method="POST">
+            <div class="container" id="tempConverter">
+                <h3>Temperature Converter</h3>
+                <div>
+                    <label for="celsiusInput">Celsius:</label><br><br>
+                    <input type="number" id="celsiusInput"><br><br>
+                    <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button><br><br>
+                </div>
+                <p class="result" id="fahrenheitResult"></p><br><br>
+                <div>
+                    <label for="fahrenheitInput">Fahrenheit:</label><br><br>
+                    <input type="number" id="fahrenheitInput"><br><br>
+                    <button onclick="convertToCelsius()">Convert to Celsius</button>
+                </div>
+                <p class="result" id="celsiusResult"></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function convertToFahrenheit() {
+            let celsius = document.getElementById('celsiusInput').value;
+            let fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById('fahrenheitResult').innerText = 'Fahrenheit: ' + fahrenheit.toFixed(2) + ' °F';
+        }
+
+        function convertToCelsius() {
+            let fahrenheit = document.getElementById('fahrenheitInput').value;
+            let celsius = (fahrenheit - 32) * 5/9;
+            document.getElementById('celsiusResult').innerText = 'Celsius: ' + celsius.toFixed(2) + ' °C';
+        }
+    </script>
+
+</body>
+</html>

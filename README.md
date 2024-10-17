@@ -81,4 +81,53 @@
    
       ***routing  Hosting*** 
 
+# ExpressNodeJsLearn
+=====================
+
+server side skilled four important topic
+=============================================
+### 1. Routing
+Routing is the process of mapping URLs to specific server-side code. In Express, routing is handled using
+the `app.use()` method.
+### 2. Response
+Response is the data sent back to the client. In Express, response is handled using the `res    
+.send()` method.
+
+
+    
+
+### 3. Request
+Request is the data sent from the client to the server. In Express, request is handled using the
+`req` object.
+
+***request method***
+
+    get(), post(), put(),delete()
+
+GET Method :
+1. create simple get request , 
+2. simple get request with URL Parameter, 
+3. Catch request header simple get method
+4. simple get request with query parameter
+
+POST Method:
+1. Request
+2. Request with URL Parameter
+3. Request Header
+4. Request JSON Body
+5. Request Multiple form Data
+6. Request File Uploads
+
+ 
+PUT Method:
+Delete Method : 
+### 4. Middleware
+Middleware is a function that runs between the request and response. In Express, middleware is
+handled using the `app.use()` method.
+### 5. DataBase Operation
+DataBase Operation is the process of interacting with a database. In Express, database operation is
+handled using the `mongoose` package.
+
+
+ 
 

@@ -1,0 +1,11 @@
+.dynamodb/
+
+.tern-port
+
+.vscode-test
+
+.yarn/cache
+.yarn/unpkugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
